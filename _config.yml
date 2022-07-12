@@ -30,6 +30,8 @@ domain: uralm1.github.io
 #twitter_username: uralm1
 github_username: uralm1
 
+show_excerpts: true
+
 # Build settings
 theme: minima
 plugins:
