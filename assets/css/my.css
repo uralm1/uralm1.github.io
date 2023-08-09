@@ -1,0 +1,42 @@
+body {
+  font-size: 17px;
+}
+
+.container {
+  max-width: 964px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.site-title {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.common-header {
+  padding-bottom: 0.4em;
+}
+
+header nav:not(:empty) {
+  margin-top: 0em;
+  text-align: right;
+}
+
+.common-footer {
+  font-size: 14px;
+  color: #828282;
+}
+
+.theme-switcher {
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--table-border-color);
+  padding: 0em 1em;
+}

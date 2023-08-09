@@ -1,0 +1,49 @@
+baseURL = 'http://example.org/'
+languageCode = 'ru-RU'
+theme = 'anubis'
+title = 'Урал Хасанов'
+paginate = 5
+summaryLength = 35
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[params]
+author = "Ural Khasanov personal page"
+description = "Programming. Modern Perl. DevOps. System administration."
+dateFormat = "Jan 2 2006"
+paginationSinglePost = false
+#readMore = false
+#readNextPosts = 2
+style = "auto"
+customCSS = ["css/my.css"]
+copyCodeButton = false
+#rssAsSocialIcon = true
+mathjax = false
+
+[[params.social]]
+id = "github"
+name = "uralm1"
+
+[menu]
+
+[[menu.main]]
+identifier = "home"
+name = "Главная"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+name = "Индекс"
+url = "/tags/"
+weight = 2
+
+[[menu.main]]
+identifier = "cv"
+name = "Моё резюме"
+url = "/cv"
+weight = 10
+
+[markup.goldmark.renderer]
+unsafe = true
