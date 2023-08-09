@@ -23,7 +23,7 @@ mathjax = false
 
 [[params.social]]
 id = "github"
-name = "uralm1"
+url = "https://github.com/uralm1/uralm1.github.io"
 
 [menu]
 
