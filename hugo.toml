@@ -2,11 +2,10 @@ baseURL = 'http://example.org/'
 languageCode = 'ru-RU'
 theme = 'anubis'
 title = 'Урал Хасанов'
-paginate = 5
 summaryLength = 35
 
-disqusShortname = ""
-googleAnalytics = ""
+[pagination]
+pagerSize = 5
 
 [params]
 author = "Ural Khasanov personal page"
@@ -20,6 +19,9 @@ customCSS = ["css/my.css"]
 copyCodeButton = false
 #rssAsSocialIcon = true
 mathjax = false
+
+googleAnalytics = ""
+disqusShortname = ""
 
 [[params.social]]
 id = "github"

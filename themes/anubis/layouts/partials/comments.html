@@ -1,4 +1,4 @@
-{{ if .Site.DisqusShortname }}
+{{ if .Site.Params.DisqusShortname }}
     {{ partial "disqus.html" . }}
 {{ end }}
 
@@ -13,3 +13,7 @@
 {{ if .Site.Params.graphcommentId }}
     {{ partial "graphcomment.html" . }}
 {{ end }}
+
+{{ if .Site.Params.GiscusRepo}}
+    {{ partial "giscus.html" . }}
+{{ end}}

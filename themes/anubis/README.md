@@ -1,8 +1,13 @@
-# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/7d9ea909-ad7e-4e47-b7c9-eefb7522d8c6/deploy-status)](https://app.netlify.com/sites/hugo-theme-anubis/deploys) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/mitrichius/1)
+# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
+## ⚠️ Theme is no longer maintained
+Thank you all.  
+More info: https://mitrich.me/en/posts/anubis-closed/  
 
-[Demo](https://hugo-theme-anubis.netlify.app/)
+---
+
+Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).  
+[Demo](https://anubis.mitrich.me)
 
 ![Anubis Screenshot](https://raw.githubusercontent.com/mitrichius/hugo-theme-anubis/master/images/screenshot.png)
 
@@ -19,7 +24,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Social icons
 - Google Analytics
 - Umami Analytics
-- Comment systems: Disqus, ISSO, Utteranc.es, GraphComment
+- Comment systems: Disqus, ISSO, Utteranc.es, GraphComment, Giscus
 - RSS feeds
 - Related posts (Read Next section)
 - Deploy via Netlify (config included in example site)
@@ -134,6 +139,12 @@ params:
     datacache: false # optional
     url: "https://abc.example.com/umami.js" # mandatory
   graphcommentId: ""
+  # giscus support
+  GiscusRepo: "" # mandatory
+  GiscusRepoId: "" # mandatory
+  GiscusCategory: "Announcements" # mandatory
+  GiscusCategoryId: "" # mandatory
+  GiscusLazyLoad: false # optional
   webmentions:
     url: https://yourdomain.com/webemntions/receive
     login: hugo-theme-anubis
@@ -274,6 +285,10 @@ If you use webmention.io you can also enable pingback with `pingback: true`
 
 ### Disabling comments per-page basis
 Add `disableComments: true` to post front matter.
+
+## Custom shortcodes
+### Video (for local videofiles)
+Example: `{{< video src="/media/movie.mp4" type="video/mp4" preload="auto" caption="Some caption" alt="Some alt" >}}`
 
 ## Contributing
 
