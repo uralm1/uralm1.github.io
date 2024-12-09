@@ -11,6 +11,7 @@ pagerSize = 5
 author = "Ural Khasanov personal page"
 description = "Programming. Modern Perl. DevOps. System administration."
 dateFormat = "Jan 2 2006"
+mainSections = [ "posts" ]
 paginationSinglePost = false
 #readMore = false
 #readNextPosts = 2
