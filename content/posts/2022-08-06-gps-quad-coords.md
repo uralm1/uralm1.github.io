@@ -1,7 +1,7 @@
 ---
 title:  "Форматы GPS-координат на OpenTX, Google Maps и прочем"
 date:   2022-08-06 15:04:00 +0500
-tags: [gps, coordinates, format, copter]
+tags: [gps, coordinates, format]
 ---
 Иногда приходится искать модель по GPS-координатам.
 В аппаратуре OpenTX на экранах телеметрии координаты GPS отображаются двумя способами
