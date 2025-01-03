@@ -14,11 +14,10 @@ keywords:
   - Command substitution
 ---
 
-## Getting started
-{: .-three-column}
 
-### Introduction
-{: .-intro}
+## Introduction
+---
+{{% three-column %}}
 
 This is a quick reference to getting started with Bash scripting.
 
@@ -78,7 +77,6 @@ git commit || echo "Commit failed"
 ```
 
 ### Functions
-{: id='functions-example'}
 
 ```bash
 get_name() {
@@ -91,7 +89,6 @@ echo "You are $(get_name)"
 See: [Functions](#functions)
 
 ### Conditionals
-{: id='conditionals-example'}
 
 ```bash
 if [[ -z "$string" ]]; then
@@ -127,8 +124,12 @@ echo {A,B}.js
 
 See: [Brace expansion](https://web.archive.org/web/20230207192110/https://wiki.bash-hackers.org/syntax/expansion/brace)
 
+{{% /three-column %}}
+
+
 ## Parameter expansions
-{: .-three-column}
+---
+{{% three-column %}}
 
 ### Basics
 
@@ -264,8 +265,12 @@ echo "${str^^}"  #=> "HELLO WORLD!" (all uppercase)
 
 Omitting the `:` removes the (non)nullity checks, e.g. `${foo-val}` expands to `val` if unset otherwise `$foo`.
 
+{{% /three-column %}}
+
+
 ## Loops
-{: .-three-column}
+---
+{{% three-column %}}
 
 ### Basic for loop
 
@@ -315,8 +320,12 @@ while true; do
 done
 ```
 
+{{% /three-column %}}
+
+
 ## Functions
-{: .-three-column}
+---
+{{% three-column %}}
 
 ### Defining functions
 
@@ -381,8 +390,12 @@ Otherwise, they do exactly the same thing (arguments as separate strings).
 
 See [Special parameters](https://web.archive.org/web/20230318164746/https://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
 
+{{% /three-column %}}
+
+
 ## Conditionals
-{: .-three-column}
+---
+{{% three-column %}}
 
 ### Conditions
 
@@ -475,7 +488,12 @@ if [[ -e "file.txt" ]]; then
 fi
 ```
 
+{{% /three-column %}}
+
+
 ## Arrays
+---
+{{% two-column %}}
 
 ### Defining arrays
 
@@ -522,8 +540,12 @@ for i in "${arrayName[@]}"; do
 done
 ```
 
+{{% /two-column %}}
+
+
 ## Dictionaries
-{: .-three-column}
+---
+{{% three-column %}}
 
 ### Defining
 
@@ -568,7 +590,12 @@ for key in "${!sounds[@]}"; do
 done
 ```
 
+{{% /three-column %}}
+
+
 ## Options
+---
+{{% two-column %}}
 
 ### Options
 
@@ -592,7 +619,12 @@ shopt -s globstar    # Allow ** for recursive matches ('lib/**/*.rb' => 'lib/a/b
 Set `GLOBIGNORE` as a colon-separated list of patterns to be removed from glob
 matches.
 
+{{% /two-column %}}
+
+
 ## History
+---
+{{% two-column %}}
 
 ### Commands
 
@@ -635,7 +667,12 @@ matches.
 
 `!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
 
+{{% /two-column %}}
+
+
 ## Miscellaneous
+---
+{{% two-column %}}
 
 ### Numeric calculations
 
@@ -845,11 +882,14 @@ if grep -q 'foo' ~/.bash_history; then
 fi
 ```
 
+{{% /two-column %}}
+
+
 ## Also see
-{: .-one-column}
 
 - [Bash-hackers wiki](https://web.archive.org/web/20230406205817/https://wiki.bash-hackers.org/) _(bash-hackers.org)_
 - [Shell vars](https://web.archive.org/web/20230318164746/https://wiki.bash-hackers.org/syntax/shellvars) _(bash-hackers.org)_
 - [Learn bash in y minutes](https://learnxinyminutes.com/docs/bash/) _(learnxinyminutes.com)_
 - [Bash Guide](http://mywiki.wooledge.org/BashGuide) _(mywiki.wooledge.org)_
 - [ShellCheck](https://www.shellcheck.net/) _(shellcheck.net)_
+

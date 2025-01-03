@@ -48,5 +48,11 @@ name = "Моё резюме"
 url = "/cv"
 weight = 10
 
+[markup]
+
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.highlight]
+noClasses = false
+
