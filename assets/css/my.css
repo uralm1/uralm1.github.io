@@ -40,3 +40,35 @@ th, td {
   border: 1px solid var(--table-border-color);
   padding: 0em 1em;
 }
+
+div.-one-column {
+  columns: 1;
+}
+
+@media (min-width:961px) {
+  div.-three-column {
+    columns: 3;
+  }
+  div.-two-column {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width:769px) and (max-width:960px) {
+  div.-three-column {
+    columns: 2;
+  }
+}
+
+@media (min-width:769px) {
+  div.-two-column {
+    columns: 2;
+  }
+}
+
+@media (min-width:1024px) {
+  div.-three-column {
+    gap: 1.5rem;
+  }
+}
+
