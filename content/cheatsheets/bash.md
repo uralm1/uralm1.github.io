@@ -427,7 +427,7 @@ Note that `[[` is actually a command/program that returns either `0` (true) or `
 | ---                  | ---                      |
 | `[[ ! EXPR ]]`       | Not                      |
 | `[[ X && Y ]]`       | And                      |
-| `[[ X || Y ]]`       | Or                       |
+| `[[ X &#124;&#124; Y ]]` | Or                   |
 
 ### File conditions
 
